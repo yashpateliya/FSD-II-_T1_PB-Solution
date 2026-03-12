@@ -22,14 +22,13 @@ const Student={
     ]
 };
 
+
 var sort=Student.students.sort((a,b)=>b.age-a.age);
 console.log(sort);
 
 
-var json=JSON.stringify(Student)
-console.log(json)
 
-// printing name in terminal as per the sorted age
+// Print name
 for (let i=0;i<Student.students.length;i++){
     console.log(Student.students[i].name)
 }
