@@ -5,28 +5,31 @@
 
 
 
-const Student=
-     [{
-        name:"Yash",
-        age:20
-},{
-        name:"Guarav",
-        age:23
-    },{
-        name:"Chhaya",
-        age:19  
-    }]
+const Student={
+    "students": [
+        {
+            "name": "Yash",
+            "age": 20
+        },
+        {
+            "name": "Guarav",
+            "age": 23
+        },
+        {
+            "name": "Chhaya",
+            "age": 19
+        }
+    ]
+};
 
-    
-    
-var sort=Student.sort((a,b)=>b.age-a.age)   
-console.log(sort)
+var sort=Student.students.sort((a,b)=>b.age-a.age);
+console.log(sort);
 
 
 var json=JSON.stringify(Student)
 console.log(json)
 
 // printing name in terminal as per the sorted age
-for (let i=0;i<Student.length;i++){
-    console.log(Student[i].name)
+for (let i=0;i<Student.students.length;i++){
+    console.log(Student.students[i].name)
 }
