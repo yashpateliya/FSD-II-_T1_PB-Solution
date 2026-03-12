@@ -1,5 +1,5 @@
-;
-
+// Write one JSON string with date property (yyyy-mm-dd) and print
+// date in India standard time.
 
 const example={
     "str":"This will our JSON file",
